@@ -29,7 +29,9 @@ class Laravel4TwilioServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app['twilio'] = $this->app->share(function ($app) {
+            return new Laravel4Twilio();
+        });
     }
 
     /**
@@ -39,6 +41,6 @@ class Laravel4TwilioServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array();
+        return array('twilio');
     }
 }
