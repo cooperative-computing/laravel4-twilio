@@ -1,0 +1,25 @@
+{
+    "name": "cooperative-computing/laravel4-twilio",
+    "description": "A Laravel 4 Package for Twilio",
+    "type": "library",
+    "keywords": ["laravel4", "twilio", "sms", "call"],
+    "authors": [
+        {
+            "name": "cooperative-computing",
+            "email": "support@cooperativecomputing.com"
+        }
+    ],
+    "homepage": "https://github.com/cooperative-computing/laravel-twilio",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "twilio/sdk": "3.12.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "CooperativeComputing\\Laravel4Twilio\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
