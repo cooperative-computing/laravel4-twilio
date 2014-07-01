@@ -9,7 +9,7 @@
             "email": "support@cooperativecomputing.com"
         }
     ],
-    "homepage": "https://github.com/cooperative-computing/laravel-twilio",
+    "homepage": "http://www.cooperativecomputing.com",
     "license": "MIT",
     "require": {
         "php": ">=5.4.0",
