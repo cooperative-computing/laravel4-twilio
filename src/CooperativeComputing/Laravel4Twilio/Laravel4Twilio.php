@@ -39,7 +39,7 @@ class Laravel4Twilio
      * 
      * @return mixed
      */
-    public function sendMessage($to, $message, $from=null)
+    public function sendMessage($to, $message, $from = null)
     {
         $twilio = $this->getTwilioInstance();
         try {
@@ -54,9 +54,7 @@ class Laravel4Twilio
                 'code'    => 200,
                 'message' => $message->sid
             );
-        }
-        catch (\ErrorException $e)
-        {
+        } catch (\ErrorException $e) {
             return array(
                 'status'  => 'error',
                 'code'    => $e->getCode(),
